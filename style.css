@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+/* Core styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Lora', serif;
+}
+
+a, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Nav */
+
+.nav-wrapper {
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #49f;
+
+}
+
+nav {
+  margin: 0;
+}
+
+.nav * {
+  margin: .5em 1em;
+
+}
+
+.nav h1 {
+
+}
+
+#nav-list {
+  display: flex;
+  margin: 0;
+
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+
+
+/* Main */
+
+main {
+
+}
+
+/* Section 1 */
+
+#section1 {
+  background-color: #49f;
+  text-align: center;
+  /* padding: 6em; */
+  padding: 8em;
+  color: #fff;
+  width: 100%;
+}
+
+#main-text {
+  font-size: 1rem;
+  text-shadow: 5px 5px 20px #333;
+}
+
+#main-text h1 {
+  font-size: 5em;
+}
+
+#main-text h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+#section1 span {
+  color: #fc0;
+}
+
+#section1 p {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: bolder;
+}
+
+
+/* Section 2 */
+
+#section2 {
+  margin: 3em 1em;
+
+}
+
+.card-container {
+  display: flex;
+  margin: 2em 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  background-color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  margin: 0 1em;
+}
+
+
+.card img {
+  flex: 1;
+  width: 40%;
+}
+
+.card-text {
+  margin: 1em
+}
+
+.card-text h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text * {
+  color: #333;
+}
+
+/* Section 3 */
+
+#section3 {
+  margin: 0 6em;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
+  grid-gap: 1em;
+  margin: 2em 0;
+}
+
+.story-card {
+  display: flex;
+  padding: .8em;
+}
+
+.story-card p {
+  /* width: 75%; */
+}
+
+.story-wrapper {
+  text-align: center;
+  margin: 0 2em;
+}
+
+.story-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+
+/* Section 4 */
+
+#section4 {
+  text-align: center;
+}
+
+#getStarted-button {
+  margin: 3em 0;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 5px;
+  background-color: #8cbcff;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 5px #7cc;
+}
+
+#getStarted-button:hover {
+  box-shadow: 0 0 10px #7cc;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 8em;
+  background-color: #e3e3e3;
+}
+
+#copyright {
+}
+
+#social {
+}
+
+
+.social-img {
+  width: 40px;
+  height: 40px;
+  color: red;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+
+footer div {
+  margin: 0 2em;
+}
+
+#social a {
+  margin: 0 1em;
+  color: #333;
+}
+
+@media screen and (max-width:850px){
+  .nav {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+  #nav-list {
+    margin: auto;
+  }
+  .nav-item {
+    margin: 0;
+    font-size: 100%;
+  }
+
+}
+
+@media screen and (max-width:750px){
+  .card-container {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 1em 0;
+  }
+  #section1 {
+    padding: 8em 4em;
+  }
+
+  #main-text {
+    font-size: .8rem;
+  }
+}
+
+
+@media screen and (max-width: 550px){
+  #section3 {
+    margin: 0;
+  }
+  #section1 {
+    padding: 8em .5em;
+  }
+  #main-text {
+    font-size: .5rem;
+  }
+
+  .section-header {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 450px){
+  #section1  {
+    padding: 10em 1em;
+  }
+  #main-text {
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width:330px){
+  #section1  {
+    padding: 5em 1em;
+  }
+
+  #main-text {
+    font-size: .4rem;
+  }
+    .sub-text {
+      font-size: .8em;
+    }
+    .section-header {
+      font-size: 1.2rem
+    }
+}
